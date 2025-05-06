@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <p>Player: {{ player }}</p>
+    <p>Your Prediction: {{ predicted }}</p>
+    <p>Actual Points: {{ actual }}</p>
+    <p>Result: {% if success %}Correct! You won {{ winnings }} points!{% else %}Incorrect. Better luck next time!{% endif %}</p>
+    <p>Total Points: {{ points }}</p>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
